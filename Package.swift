@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.8
 
 import PackageDescription
 
@@ -14,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-crypto.git", "1.0.0" ..< "3.0.0"),
-        .package(url: "https://github.com/GigaBitcoin/secp256k1.swift.git", .exact("0.10.0")),
-        .package(url: "https://github.com/horizontalsystems/HsCryptoKit.Swift.git", .upToNextMinor(from: "1.2.1"))
+        .package(url: "https://github.com/AikenCod/secp256k1Swift.swift.git", branch: "echooo"),
+        .package(url: "https://github.com/HEchooo/HsCryptoKit.Swift.git", branch: "main")
     ],
     targets: [
         .target(
@@ -23,7 +23,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Crypto", package: "swift-crypto"),
                 .product(name: "_CryptoExtras", package: "swift-crypto"),
-                .product(name: "secp256k1", package: "secp256k1.swift"),
+                .product(name: "secp256k1Swift", package: "secp256k1Swift.swift"),
                 .product(name: "HsCryptoKit", package: "HsCryptoKit.Swift"),
             ]),
         .testTarget(

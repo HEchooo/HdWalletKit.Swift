@@ -1,6 +1,6 @@
 import Foundation
 import HsCryptoKit
-import secp256k1
+import secp256k1Swift
 
 public class HDPublicKey: HDKey {}
 

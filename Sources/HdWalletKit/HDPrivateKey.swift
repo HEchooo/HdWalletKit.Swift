@@ -1,7 +1,7 @@
 import Foundation
 import HsCryptoKit
 import HsExtensions
-import secp256k1
+import secp256k1Swift
 
 public class HDPrivateKey: HDKey {
 
